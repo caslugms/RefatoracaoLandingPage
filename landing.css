@@ -25,19 +25,29 @@ h2 {
 
 
 .card {
-    background-color: #1e1e1e;
-    color: #fff;
+    width: 18rem;
+    min-height: 500px; /* Define uma altura mínima para padronizar os cards */
+    background-color: #000; /* fundo preto */
+    color: #fff; /* texto branco */
     border: none;
     transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribui espaço entre os elementos */
 }
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 6px 16px rgba(255, 0, 0, 0.5); /* sombra avermelhada */
 }
 
 .card-title {
-    color: #ff4444;
+    color: #ff4444; /* título vermelho */
+}
+
+.card-img-top {
+    height: 200px; /* altura padrão para as imagens */
+    object-fit: cover; /* mantém a imagem preenchida e cortada se necessário */
 }
 
 
