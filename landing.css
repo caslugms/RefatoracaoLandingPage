@@ -1,16 +1,18 @@
 body {
-    background-color: #121212;
-    color: #f0f0f0;
+    background-color:#03223f;
+    color: #ffffff;
 }
 
 .navbar {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    background: #fccb6f;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.7);
 }
 
 .titulo-principal {
-    font-family: 'Creepster', cursive;
+  font-family: "Rubik Glitch Pop", system-ui;
+  font-style: normal;
     font-size: 70px;
-    color: red;
+    color: #03223f;
     text-align: center;
     margin: 30px 0;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
@@ -18,55 +20,63 @@ body {
 
 
 h2 {
-    color: #ffffff;
-    border-bottom: 2px solid #444;
-    padding-bottom: 8px;
+    color: #03223f;
+    border-bottom: 2px solid #03223f;
+    padding-bottom: 6px;
 }
 
 
 .card {
     width: 18rem;
-    min-height: 500px; /* Define uma altura mínima para padronizar os cards */
-    background-color: #000; /* fundo preto */
-    color: #fff; /* texto branco */
+    min-height: 500px; 
+    background-color: #000; 
+    color: #fff; 
     border: none;
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Distribui espaço entre os elementos */
+    justify-content: space-between; 
 }
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 16px rgba(255, 0, 0, 0.5); /* sombra avermelhada */
+    box-shadow: 0 6px 16px #fccb6f; 
 }
 
 .card-title {
-    color: #ff4444; /* título vermelho */
+    font-family: "Rubik Glitch Pop", system-ui;
+    font-style: normal;
+
+    color: #fccb6f;
 }
 
 .card-img-top {
-    height: 200px; /* altura padrão para as imagens */
-    object-fit: cover; /* mantém a imagem preenchida e cortada se necessário */
+    height: 200px; 
+    object-fit: cover; 
 }
 
 
 .btn-primary {
-    background-color: #ff4444;
+    background-color: #fccb6f;
     border: none;
 }
 
 .btn-primary:hover {
-    background-color: #cc0000;
+    background-color: #03223f;
 }
 
 
 a.nav-link {
     color: #f0f0f0 !important;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
 a.nav-link:hover {
-    color: #ff4444 !important;
+    color: #fff !important;
+    background-color: #03223f;
 }
 
 .carousel-inner img {
@@ -74,36 +84,73 @@ a.nav-link:hover {
     object-fit: cover;
 }
 
-
-.elenco-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin: 30px;
+.titulos{
+  font-family: "Rubik Glitch Pop", system-ui;
+  font-style: normal;
+  text-align: center;
+  font-size: 50px;
+  color: #fccb6f;
+  margin: 20px;
 }
 
-
-.sobre-filme {
-    color: #f5f5f5;
-    padding: 50px 20px;
-    border-radius: 15px;
-    margin-bottom: 5Melhores Shows De Acordo Com o Público0px;
+.table {
+    background-color: #000; 
+    color: #fff; 
+    border-radius: 10px;
+    overflow: hidden;
 }
 
+.table th {
+    background-color: #fccb6f; 
+    color: #03223f; 
+    font-family: "Rubik Glitch Pop", system-ui;
+    font-size: 20px;
+    text-align: center;
+}
 
-.sobre-filme h2 {
+.table td {
+    text-align: center;
+    vertical-align: middle;
+}
 
+.table-hover tbody tr:hover {
+    background-color: rgba(252, 203, 111, 0.2);
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #fccb6f;
+}
+
+#Localizacao {
+    color: #fccb6f;
+    text-align: center;
+    font-family: "Rubik Glitch Pop", system-ui;
+    font-size: 50px;
+    margin: 40px 0 20px 0;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.sobre-festival {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+.sobre-festival h2 {
+    font-family: "Rubik Glitch Pop", system-ui;
+    color: #fccb6f;
     text-align: center;
     margin-bottom: 20px;
-    font-size: 48px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
-.sobre-filme p {
-    font-family: 'Arial', sans-serif;
-    font-size: 1.2rem;
+.sobre-festival p {
+    font-size: 18px;
     line-height: 1.8;
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
+    text-align: justify;
+    margin-bottom: 15px;
 }
